@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+}
+/* header section */
+#main-header{
+    width: 100vw;
+    background-color: aliceblue;
+    padding: 12px 0;
+}
+.nav-section{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.logo{
+    font-size: 1rem;
+    color: #333;
+}
+#main-header .nav-section .navbar{
+   display: flex;
+   list-style: none;
+}
+.navbar li a{
+    padding: 0 20px;
+    text-decoration: none;
+    color: #333;
+}
+/* main section  */
+#section-main{
+    display: flex;
+    padding-top: 6rem;
+    justify-content: space-around;
+}
+.main-img{
+    width: 45vw;
+}
+.main-img img{
+   width: 400px;
+   height: 450px;
+   float: right;
+}
+.main-info{
+    width: 55%;
+    padding-left: 4rem;
+}
+.main-info h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.memory-info, .storage-info, .delivery-info{
+    padding: 1.4rem 0;
+}
+.memory-info label, .storage-info label, .delivery-info label{
+   font-weight: 600;
+}
+.memory-info input, .storage-info input, .delivery-info input{
+    width: 50%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #333;
+}
+.total p{
+    border-bottom: 1px solid #333;
+    padding-right: 1rem;
+}
+.total p:last-child{
+    border-bottom: 1.5px solid #333;
+}
+
+.pomo-code{
+    padding: 1.4rem 0;
+}
+.pomo-code label{
+    font-weight: 500;
+}
+.pomo-code input{
+    width: 50%;
+    padding: 0.8rem;
+    border: 1px solid #333;
+}
+.pomo-code .apply-btn{
+    font-size: 1rem;
+    padding: .8rem;
+    background-color: #DC3545;
+    border: none;
+    color: #fff;
+}
+footer{
+    width: 100vw;
+}
+hr{
+    width: 80%;
+    margin: 0 auto;
+}
+.total-price{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+

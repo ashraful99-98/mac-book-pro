@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>MAC-BooK-Pro</title>
+</head>
+
+<body>
+    <header>
+        <section id="main-header">
+            <nav class="nav-section">
+                <div class="logo">
+                    <h1>MAC-Book-Pro</h1>
+                </div>
+                <ul class="navbar">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">Card</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section id="section-main">
+            <div class="main-img">
+                <img src="./imge/mac.png" alt="">
+            </div>
+            <div class="main-info">
+                <h2>Customize your Blue 24‑inch iMac with Apple M1 chip.</h2>
+                <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and
+                    16-core Neural Engine</p>
+                <p>8GB unified memory</p>
+                <p>256GB SSD storage</p>
+                <p>Two Thunderbolt / USB 4 ports</p>
+                <p>Magic Mouse
+                </p>
+                <p>Magic Keyboard - US English</p>
+
+                <div class="memory-info">
+                    <label for="">Memory</label>
+                    <br>
+                    <input onclick="updatePrice('8gb')" type="text" placeholder="8GB unified memory">
+                    <input onclick="updatePrice('16gb')" type="text" placeholder="16GB unified memory">
+                </div>
+                <div class="storage-info">
+                    <label for="">Storage</label>
+                    <br>
+                    <input type="text" onclick="updatePrice('256gb')" placeholder="256GB SSD storage">
+                    <input type="text" onclick="updatePrice('512gb')" placeholder="512GB SSD storage">
+                    <input type="text" onclick="updatePrice('1tb')" placeholder="1TB SSD storage">
+                </div>
+                <div class="delivery-info">
+                    <label for="">Choose your delivery option</label>
+                    <br>
+                    <input type="text" onclick="updatePrice('free')" placeholder="Friday, Aug 25 FREE Prime Delivery">
+                    <input type="text" onclick="updatePrice('cost')" placeholder="Friday, Aug 31 Delivery Charge $20">
+                </div>
+                <div class="total">
+                    <p>Best Price $<span>1299</span></p>
+                    <p>Extra Memory Cost $<span id="extra-memoey-cost">0</span></p>
+                    <p>Extra Storage Cost $<span id="extra-storage-cost">0</span></p>
+                    <p>Delivery Charge $<span id="delivery-cost">0</span></p>
+                    <p>Total Price $<span id="best-total-price">1299</span></p>
+                </div>
+                <div class="pomo-code">
+                    <label for="">Add Pomo Code</label>
+                    <br>
+                    <input type="" id="pomo-code">
+                    <button class="apply-btn" onclick="couponHandel()">Apply</button>
+                </div>
+            </div>
+        </section>
+        <div>
+            <hr>
+            <h2 class="total-price" id="discount-total">Total: $1299</h2>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
